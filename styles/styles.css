@@ -182,7 +182,7 @@ margin-bottom: 20px;
   margin-bottom: 20px;
  }
  .gifts{
-margin: 90px;
+margin: 0,90px;
  }
  .awesome{
 font-size: 40px;
@@ -251,4 +251,62 @@ margin-top: 20px;
 .right{
   color: aliceblue;
 }
+.hide{
+  display: hide;
+}
 
+
+/* base styles (for desktop) */
+body{
+  font-size: 16px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* For tablet screens */
+@media (max-width: 1024px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  img {
+      max-width: 100%;
+  }
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+/* On smaller screens */
+@media (max-width: 768px) {
+  .item {
+      flex: 1 1 100%;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
